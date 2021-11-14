@@ -1,0 +1,15 @@
+header {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-self: flex-end; IMPLEMENTAR GRID EM INDEX*/
+}
+
+button {
+    width: 20%;
+}
+
+p {
+    margin: 0;
+    font-size: 1.3rem; /* FONTE DO RPGUI ESTÁ SE SOBREPONDO (1EM)*/
+}
