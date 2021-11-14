@@ -64,7 +64,7 @@ inside your html file.
   background-position: center;
   background-size: 100% 100%;
   /* font size */
-  /* font-size: 1.0em; */
+  font-size: 1.0em;
   /* default size and display */
   max-width: 100%;
   min-width: 140px;
@@ -72,7 +72,8 @@ inside your html file.
   display: inline-block;
   /* padding */
   padding-left: 35px;
-  padding-right: 35px; }
+  padding-right: 35px; 
+}
 
 /* button hover */
 .rpgui-button.hover,
@@ -686,7 +687,7 @@ ul.rpgui-list-imp {
   /* color and border */
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  /* font-size: 1.0em; */
+  font-size: 1.0em;
   line-height: 22px; }
 
 /* default span */

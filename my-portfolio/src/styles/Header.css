@@ -1,15 +1,73 @@
 header {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     /* justify-self: flex-end; IMPLEMENTAR GRID EM INDEX*/
 }
 
-button {
-    width: 20%;
-}
-
 p {
     margin: 0;
-    font-size: 1.3rem; /* FONTE DO RPGUI ESTÁ SE SOBREPONDO (1EM)*/
+}
+
+/* button style */
+.rpgui-button {
+
+    /* hide button default stuff */
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    /* background */
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+    background-size: 100% 100%;
+
+    /* font size */
+    font-size: .8rem;
+
+    /* default size and display */
+    max-width: 100%;
+    min-width: 20%;
+    height: 20%;
+    display: inline-block;
+    
+    /* padding */
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+
+/* game div with background image*/
+.rpgui-container.framed {
+
+    /* border */
+    border-style: solid;
+    border-image-repeat: repeat;
+    border-image-slice: 6 6 6 6;
+    border-image-width: 1rem;
+    border-width: 1rem;
+    padding: .5rem;
+
+    /* internal border */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    /* background */
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center; 
+}
+
+/* default p */
+.rpgui-content p {
+    
+    /* color and border */
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    
+    font-size: .75rem;
+    line-height: 1.5rem; 
 }
