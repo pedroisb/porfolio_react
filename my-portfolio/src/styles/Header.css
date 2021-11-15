@@ -5,13 +5,31 @@ header {
     /* justify-self: flex-end; IMPLEMENTAR GRID EM INDEX*/
 }
 
-p {
-    margin: 0;
+
+
+/* -------------------------------- LOGO -------------------------------- */
+
+#logo{
+    display: flex;
+    gap: 1rem;
+    /* image-rendering:pixelated; */
 }
 
-#avatarGui {
-    width: 10em;
+#logo-img{
+    height: 3.35rem;
+    width: 4rem;
+    align-self: center;
 }
+
+#logo-txt{
+    align-self: center;
+    margin: 0;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    font-size: .9rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
 
 
 /* -------------------------------- RPGUI -------------------------------- */
@@ -63,9 +81,10 @@ p {
     -webkit-box-sizing: border-box;
 
     /* background */
+    background: url("../assets/rpgui/img/background-image-golden.png") repeat repeat;
     background-clip: padding-box;
     background-origin: padding-box;
-    background-position: center; 
+    background-position: center;
 }
 
 /* default p */
@@ -78,6 +97,9 @@ p {
     font-size: .75rem;
     line-height: 1.5rem; 
 }
+
+
+/* -------------------------------- MENU BURGER -------------------------------- */
 
 .navbar-toggler {
     border-style: solid;
