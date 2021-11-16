@@ -1,6 +1,6 @@
 import React from "react"
 import '../../assets/rpgui/rpgui.css'
-import "../../styles/Header.css";
+import './Header.css';
 import joystick from "../../assets/img/joystick.png"
 
 // import avatarGui from "../../assets/img/avatar_gui.png"

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+#banner{
+    display: flex;
+    justify-content: center;
+    /* width: fit-content; */
+    /* padding: 40px; */
+    /* background-color: #121212;   */
+}
+
+#banner p {
+    text-align: center;
+    /* width: fit-content; */
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-size: 1rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Animation */
+#banner p {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+    from{border-right-color: #D27D2C;}
+    to{border-right-color: transparent;}
+}

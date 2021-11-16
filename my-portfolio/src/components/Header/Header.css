@@ -5,6 +5,7 @@ header {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
     font-family: 'Press Start 2P', cursive;
+    /* justify-self: flex-start; */
 }
 
 
@@ -80,10 +81,15 @@ header {
     -webkit-box-sizing: border-box;
 
     /* background */
-    background: url("../assets/rpgui/img/background-image-golden.png") repeat repeat;
+    background: url("../../assets/rpgui/img/background-image-golden.png") repeat repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
+}
+
+.rpgui-container {
+    position:relative;
+    z-index: 0;
 }
 
 
@@ -91,19 +97,15 @@ header {
 
 .navbar-toggler {
     border-style: solid;
-    border-image-source: url("../assets/rpgui/img/border-image-golden2.png");
+    border-image-source: url("../../assets/rpgui/img/border-image-golden2.png");
     border-image-repeat: repeat;
-    border-image-slice: 8 8 8 8;
+    border-image-slice: 10 10 10 10;
     border-image-width: 1rem;
     border-width: .8rem;
     padding: 0rem;
 
     /* background */
-    background: url("../assets/rpgui/img/background-image-golden2.png") repeat repeat;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
+    background: url("../../assets/rpgui/img/background-image-golden2.png") repeat repeat;
 }
 
 /* modal do menu hamburguer */
@@ -112,7 +114,7 @@ header {
     gap: 1rem;
 
     border-style: solid;
-    border-image-source: url("../assets/rpgui/img/border-image.png");
+    border-image-source: url("../../assets/rpgui/img/border-image.png");
     border-image-repeat: repeat;
     border-image-slice: 8 8 8 8;
     border-image-width: 1.4rem;
@@ -125,7 +127,7 @@ header {
     -webkit-box-sizing: border-box;
     
     /* background */
-    background: url("../assets/rpgui/img/background-image.png") repeat repeat;
+    background: url("../../assets/rpgui/img/background-image.png") repeat repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
@@ -170,9 +172,16 @@ header {
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
 }
 
+
+.navbar-toggler:focus,
+.btn-close:focus,
+.btn-close:active{
+    box-shadow: none;
+}
+
 .navbar-toggler:hover,
 .btn-close:hover,
 #burger-btn:hover, 
 #burger-btn a:hover {
-    cursor: url("../assets/rpgui/img/cursor/point.png") 10 0,auto;
+    cursor: url("../../assets/rpgui/img/cursor/point.png") 10 0,auto;
 }
