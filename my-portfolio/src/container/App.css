@@ -40,8 +40,7 @@
 #root{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-content: center;
+  gap: 5rem;
   
     /* flex-wrap: wrap; */
   /* justify-content: center; */

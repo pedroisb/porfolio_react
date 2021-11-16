@@ -1,41 +1,106 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-#banner{
-    display: flex;
-    justify-content: center;
-    /* width: fit-content; */
-    /* padding: 40px; */
-    /* background-color: #121212;   */
+#banner {
+    flex-direction: column;
+    /* max-width: fit-content; */
+    align-self: center;
 }
 
-#banner p {
+#boas-vindas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#boas-vindas h1,
+#boas-vindas h3 {
+    align-self: center;
     text-align: center;
-    /* width: fit-content; */
-    border-right: solid 3px rgba(0,255,0,.75);
     white-space: nowrap;
-    overflow: hidden;    
+    overflow: hidden;
     font-size: 1rem;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
     font-family: 'Press Start 2P', cursive;
+    border-right: solid .3rem #D27D2C;
 }
 
-/* Animation */
-#banner p {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+#boas-vindas h1:nth-child(1){
+    font-size: 1.5rem;
+    /* Animation */
+    animation: 
+    animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor1 600ms steps(29,end);
+}
+
+#boas-vindas h1:nth-child(2){
+    font-size: 1.5rem;
+    /* Animation */
+    animation: 
+    animated-text 4s steps(29,end) 5s 1 normal both,
+    animated-cursor 600ms steps(29,end);
+}
+
+#boas-vindas h3:nth-child(3){
+    /* Animation */
+    animation: 
+    animated-text 4s steps(29,end) 9s 1 normal both,
+    animated-cursor 600ms steps(29,end);
+}
+
+#boas-vindas h3:nth-child(4){
+    /* Animation */
+    animation: 
+    animated-text 4s steps(29,end) 13s 1 normal both,
     animated-cursor 600ms steps(29,end) infinite;
 }
 
 /* text animation */
-
 @keyframes animated-text{
     from{width: 0%;}
     to{width: 100%;}
 }
 
 /* cursor animations */
-
 @keyframes animated-cursor{
     from{border-right-color: #D27D2C;}
     to{border-right-color: transparent;}
 }
+
+/* .css-typing p:nth-child(1) {
+    width: 7.3em;
+
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 11.5em;
+    opacity: 0;
+
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 7.3em;
+    opacity: 0;
+
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+} */
