@@ -16,7 +16,7 @@ export default () => {
     
         <div id="logo">
             <img id="logo-img" src={joystick} alt="imagem de um joystick" />
-            <p id="logo-txt">GAMEFOLIO</p>
+            <p className="logo-txt">GAMEFOLIO</p>
         </div>
         
         <nav className="navbar navbar-light
@@ -25,24 +25,28 @@ export default () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            {/* MENU OFFCANVAS */}
+            <nav className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasNavbarLabel">GAMEFOLIO</h5>
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    
+                {/* navbar-toggler */}
+                    <button type="button" className="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div className="offcanvas-body">
-                    <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
+
+                <h5 className="logo-txt">GAMEFOLIO</h5>
+                
+                <div id="offcanvas-body">
+                    
+                    <button className="rpgui-button" id="burger-btn"><a href="#">BIO</a></button>
+
+                    <button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button>
+
+                    <button className="rpgui-button" id="burger-btn"><a href="#">QUESTS</a></button>
+
+                    <button className="rpgui-button" id="burger-btn"><a href="#">INVITE TO PARTY</a></button>
                 </div>
-            </div>
+            </nav>
         </nav>
     </header>
     )

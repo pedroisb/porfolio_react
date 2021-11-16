@@ -2,34 +2,36 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* justify-self: flex-end; IMPLEMENTAR GRID EM INDEX*/
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    font-family: 'Press Start 2P', cursive;
 }
-
 
 
 /* -------------------------------- LOGO -------------------------------- */
 
 #logo{
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     /* image-rendering:pixelated; */
 }
 
 #logo-img{
-    height: 3.35rem;
-    width: 4rem;
+    object-fit: contain;
+    padding: .1rem;
+    height: 4.25rem;
+    width: 4.5rem;
     align-self: center;
+    border: white solid .2rem;
+    border-radius:50%;
+    outline: black solid .03rem;
+    background-color: #aaa;
 }
 
-#logo-txt{
+.logo-txt{
     align-self: center;
     margin: 0;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-    font-size: .9rem;
-    font-family: 'Press Start 2P', cursive;
 }
-
 
 
 /* -------------------------------- RPGUI -------------------------------- */
@@ -49,9 +51,6 @@ header {
     background-origin: padding-box;
     background-position: center;
     background-size: 100% 100%;
-
-    /* font size */
-    font-size: .8rem;
 
     /* default size and display */
     max-width: 100%;
@@ -73,7 +72,7 @@ header {
     border-image-slice: 6 6 6 6;
     border-image-width: 1rem;
     border-width: 1rem;
-    padding: .5rem;
+    padding: .25rem;
 
     /* internal border */
     box-sizing: border-box;
@@ -87,17 +86,6 @@ header {
     background-position: center;
 }
 
-/* default p */
-.rpgui-content p {
-    
-    /* color and border */
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    
-    font-size: .75rem;
-    line-height: 1.5rem; 
-}
-
 
 /* -------------------------------- MENU BURGER -------------------------------- */
 
@@ -108,20 +96,83 @@ header {
     border-image-slice: 8 8 8 8;
     border-image-width: 1rem;
     border-width: .8rem;
-    padding: 0;
-    
-    /* internal border */
-    /* box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; */
-    
+    padding: 0rem;
+
     /* background */
     background: url("../assets/rpgui/img/background-image-golden2.png") repeat repeat;
-    /* background-clip: padding-box;
-    background-origin: padding-box;
-    background-position: center; */
 }
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+/* modal do menu hamburguer */
+#offcanvasNavbar {
+    display: flex;
+    gap: 1rem;
+
+    border-style: solid;
+    border-image-source: url("../assets/rpgui/img/border-image.png");
+    border-image-repeat: repeat;
+    border-image-slice: 8 8 8 8;
+    border-image-width: 1.4rem;
+    border-width: 1rem;
+    padding: 0;
+
+    /* internal border */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    /* background */
+    background: url("../assets/rpgui/img/background-image.png") repeat repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-position: center;
+}
+
+.offcanvas-header{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1.5rem 1rem 0 0;
+    padding: 0rem;
+}
+
+.btn-close{
+    justify-self: flex-end;
+    font-size: 2rem;
+}
+
+#offcanvas-body{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    gap: 1.5rem;
+}
+
+#burger-btn {
+    width: 20rem;
+    height: 6rem;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    outline: 0;
+    max-width: 100%;
+    image-rendering: pixelated;
+    font-family: 'Press Start 2P',cursive;
+}
+
+#burger-btn a{
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+}
+
+.navbar-toggler:hover,
+.btn-close:hover,
+#burger-btn:hover, 
+#burger-btn a:hover {
+    cursor: url("../assets/rpgui/img/cursor/point.png") 10 0,auto;
 }
