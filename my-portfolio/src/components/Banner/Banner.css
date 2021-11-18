@@ -4,12 +4,14 @@
     flex-direction: column;
     /* max-width: fit-content; */
     align-self: center;
+    gap: 3rem;
 }
 
 #boas-vindas{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 
 #boas-vindas h1,
@@ -18,37 +20,39 @@
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1rem;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
     font-family: 'Press Start 2P', cursive;
-    border-right: solid .3rem #D27D2C;
+    /* border-right: solid .3rem #D27D2C; */
 }
 
 #boas-vindas h1:nth-child(1){
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     /* Animation */
     animation: 
     animated-text 4s steps(29,end) 1s 1 normal both,
-    animated-cursor1 600ms steps(29,end);
+    animated-cursor 600ms steps(29,end) infinite;
 }
 
 #boas-vindas h1:nth-child(2){
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
     /* Animation */
     animation: 
     animated-text 4s steps(29,end) 5s 1 normal both,
-    animated-cursor 600ms steps(29,end);
+    animated-cursor 600ms steps(29,end) infinite;
 }
 
 #boas-vindas h3:nth-child(3){
+    font-size: 1.2rem;
     /* Animation */
     animation: 
     animated-text 4s steps(29,end) 9s 1 normal both,
-    animated-cursor 600ms steps(29,end);
+    animated-cursor 600ms steps(29,end) infinite;
 }
 
 #boas-vindas h3:nth-child(4){
+    font-size: 1.2rem;
     /* Animation */
     animation: 
     animated-text 4s steps(29,end) 13s 1 normal both,
@@ -57,8 +61,13 @@
 
 /* text animation */
 @keyframes animated-text{
+    0%{border-right: transparent;}
+    1%{border-right: solid .3rem #D27D2C;}
+    99.9%{border-right: solid .3rem #D27D2C;}
+    100%{border: transparent;}
     from{width: 0%;}
     to{width: 100%;}
+
 }
 
 /* cursor animations */
@@ -66,41 +75,3 @@
     from{border-right-color: #D27D2C;}
     to{border-right-color: transparent;}
 }
-
-/* .css-typing p:nth-child(1) {
-    width: 7.3em;
-
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end);
-
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-.css-typing p:nth-child(2) {
-    width: 11.5em;
-    opacity: 0;
-
-    -webkit-animation: type2 2s steps(40, end);
-    animation: type2 2s steps(40, end);
-
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-.css-typing p:nth-child(3) {
-    width: 7.3em;
-    opacity: 0;
-
-    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-} */
