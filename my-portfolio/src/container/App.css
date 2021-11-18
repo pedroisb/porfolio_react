@@ -40,5 +40,8 @@
 #root{
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  /* gap: 6rem; */
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-family: 'Press Start 2P', cursive;
 }

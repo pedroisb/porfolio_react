@@ -1,0 +1,42 @@
+#quests{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 88%;
+    width: 100%;
+}
+
+#quests h1{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+#quests h3{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    display: block;
+    border: 0rem;
+    height: 1rem !important;
+    background: url('../../assets/rpgui/img/hr.png') repeat-x top left;
+    opacity: 1;
+}
+
+.quest-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;
+    gap: 5rem; */
+}
+
+.quest-card-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.quest-card-info{
+    height: fit-content;
+    align-self: center;
+}

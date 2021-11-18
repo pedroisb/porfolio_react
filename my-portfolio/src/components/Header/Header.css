@@ -2,9 +2,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-    font-family: 'Press Start 2P', cursive;
     /* justify-self: flex-start; */
 }
 
@@ -32,6 +29,7 @@ header {
 .logo-txt{
     align-self: center;
     margin: 0;
+    font-size: 1.25rem;
 }
 
 
