@@ -1,7 +1,6 @@
 /* -------------------------------- MENU BURGER -------------------------------- */
 
 .navbar-toggler {
-
     border-style: solid;
     border-image-source: url("../../assets/rpgui/img/border-image-golden2.png");
     border-image-repeat: repeat;
@@ -16,7 +15,6 @@
 
 /* modal do menu hamburguer */
 #offcanvasNavbar {
-
     display: flex;
     gap: 1rem;
 

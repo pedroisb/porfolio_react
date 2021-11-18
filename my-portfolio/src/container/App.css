@@ -44,4 +44,5 @@
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
   font-family: 'Press Start 2P', cursive;
+  /* overflow-y: scroll !important; */
 }

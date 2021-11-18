@@ -5,14 +5,14 @@ import './Banner.css'
 export default () => {
     return(
 
-        <div id="banner">
+        <section id='banner'>
             <div id='boas-vindas'>
                 <h1>SEJA BEM-VINDE AO</h1>
                 <h1>MEU GAMEFOLIO!</h1>
                 <h3>CLIQUE NO ICONE DO MENU</h3>
                 <h3>E SELECIONE UMA OPCAO</h3>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -25,14 +25,14 @@ export default () => {
                 
                 <div id="offcanvas-body">
                     
-                    <button className="rpgui-button" id="burger-btn"><a href="#">BIO</a></button>
+                    <button className="rpgui-button" id="burger-btn"><a href="#">SOBRE</a></button>
 
                     {/* NÃO FAZ PARTE DO MVP. RECOMENDO DEIXAR PARA IMPLEMENTAR FUTURAMENTE */}
                     {/* <button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button> */}
 
-                    <button className="rpgui-button" id="burger-btn"><a href="#">QUESTS</a></button>
+                    <button className="rpgui-button" id="burger-btn"><a href="#">PROJETOS</a></button>
 
-                    <button className="rpgui-button" id="burger-btn"><a href="#">INVITE TO PARTY</a></button>
+                    <button className="rpgui-button" id="burger-btn"><a href="#">CONTATO</a></button>
                 </div>
             </nav>
         </nav>
