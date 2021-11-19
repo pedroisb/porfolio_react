@@ -11,9 +11,7 @@ html {
   font-size: 10px;
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+body{
   background-color: #aaf;
+  height: 100vh;
 }

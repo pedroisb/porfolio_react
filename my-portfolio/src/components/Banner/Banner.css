@@ -2,7 +2,6 @@
 
 #banner {
     flex-direction: column;
-    /* max-width: fit-content; */
     align-self: center;
     gap: 3rem;
 }

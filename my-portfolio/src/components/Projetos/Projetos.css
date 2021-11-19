@@ -1,0 +1,63 @@
+#projetos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: static !important;
+    z-index: auto !important;
+    height: 87.25vh;
+}
+
+#projetos h1{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+#projetos h3{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    display: block;
+    border: 0rem;
+    height: 1rem !important;
+    background: url('../../assets/rpgui/img/hr.png') repeat-x top left;
+    opacity: 1;
+}
+
+.card-avatar{
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    border: white solid .5rem;
+    border-radius: 25%;
+    outline: .25rem solid black;
+}
+
+/* carousel-item tem display:none por padrão, apliquei flex no prev, next e active, para contemplar somente aqueles que têm que estar visíveis. Se aplicar flex em todos, todos os cards serão renderizados simultaneamente, uns sobre os outros */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:flex;
+}
+
+.carousel-item{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.carousel-item h5{
+    font-size: 1.5rem;
+}
+
+.carousel-item p{
+    font-size: 1rem;
+    width: 90%;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    width: 10%;
+    top: 65.25vh;
+}
