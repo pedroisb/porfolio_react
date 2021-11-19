@@ -1,5 +1,4 @@
 /* -------------------------------- MENU BURGER -------------------------------- */
-
 .navbar-toggler {
     border-style: solid;
     border-image-source: url("../../assets/rpgui/img/border-image-golden2.png");
@@ -17,6 +16,7 @@
 #offcanvasNavbar {
     display: flex;
     gap: 1rem;
+    text-align: center;
 
     border-style: solid;
     border-image-source: url("../../assets/rpgui/img/border-image.png");
@@ -41,7 +41,7 @@
 .offcanvas-header{
     display: flex;
     flex-direction: row-reverse;
-    margin: 1.5rem 1rem 0 0;
+    margin: 1.5rem 1rem 2rem 0;
     padding: 0rem;
 }
 
@@ -50,18 +50,26 @@
     font-size: 2rem;
 }
 
-#offcanvas-body{
-    margin-top: 3.5rem;
+#offcanvas-btns{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#burger-title{
+    font-size: 2rem;
+}
+
+hr{
     align-self: center;
-    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    width: 90%;
 }
 
 #burger-btn {
-    width: 20rem;
-    height: 6rem;
+    width: 25rem;
+    height: 7.5rem;
     display: inline-block;
     padding-left: 35px;
     padding-right: 35px;
@@ -72,6 +80,7 @@
 }
 
 #burger-btn a{
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;

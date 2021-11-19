@@ -13,7 +13,7 @@ export default () => {
     <header className="rpgui-container framed">
         <div id="logo">
             {logo}
-        <p className="logo-txt">GAMEFOLIO</p>
+        <p id="logo-txt">GAMEFOLIO</p>
         </div>
         <MenuBurger />
     </header>

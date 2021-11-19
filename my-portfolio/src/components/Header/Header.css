@@ -1,8 +1,11 @@
 header {
+    position: fixed !important;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* justify-self: flex-start; */
+
+    /* Boa parte dos containers importados do rpgui têm z-index: 10. Sem esse reajuste, o header e o menu-burger ficam por baixo */
+    z-index: 20 !important;
 }
 
 
@@ -26,7 +29,7 @@ header {
     background-color: #aaa;
 }
 
-.logo-txt{
+#logo-txt{
     align-self: center;
     margin: 0;
     font-size: 1.25rem;

@@ -26,8 +26,10 @@ export default class Projetos extends Component {
         <div className={carouselStatus}>
           <img className="card-avatar" src={avatar} alt="" />
           <h5>{titulo}</h5>
-          <p>{subtitulo}</p>
-          <p>{descricao}</p>
+          <div id="card-descricao">
+            <p>{subtitulo}</p>
+            <p>{descricao}</p>
+          </div>
           <div>
             <a href={webpage} target="_blank">Site</a>
             <a href={repo}target="_blank">Repo</a>
@@ -39,7 +41,6 @@ export default class Projetos extends Component {
             <section id='projetos' className="rpgui-container framed-grey">
                 <h1>PROJETOS</h1>
                 <hr />
-
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <img className="d-block w-100" src="" alt="" />

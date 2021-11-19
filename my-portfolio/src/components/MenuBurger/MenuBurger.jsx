@@ -20,21 +20,18 @@ export default () => {
                 {/* navbar-toggler */}
                     <button type="button" className="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <h5 className="logo-txt">GAMEFOLIO</h5>
+                <h5 id="burger-title">GAMEFOLIO</h5>
+                <hr /> 
                 
-                <div id="offcanvas-body">
-                    
+                <div id="offcanvas-btns">
                     <button className="rpgui-button" id="burger-btn"><a href="#">SOBRE</a></button>
-
-                    {/* NÃO FAZ PARTE DO MVP. RECOMENDO DEIXAR PARA IMPLEMENTAR FUTURAMENTE */}
-                    {/* <button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button> */}
-
                     <button className="rpgui-button" id="burger-btn"><a href="#">PROJETOS</a></button>
-
                     <button className="rpgui-button" id="burger-btn"><a href="#">CONTATO</a></button>
                 </div>
             </nav>
         </nav>
     )
 }
+
+{/* NÃO FAZ PARTE DO MVP. RECOMENDO DEIXAR PARA IMPLEMENTAR FUTURAMENTE */}
+{/* <button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button> */}

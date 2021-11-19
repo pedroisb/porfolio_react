@@ -1,0 +1,41 @@
+#sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* position: static !important; */
+    height: 87.25vh;
+}
+
+#sobre h1{
+    font-size: 1.8rem;
+    /* margin-top: 1.5rem; */
+    margin-bottom: 3rem;
+    color: #DAD45E;
+}
+
+#avatar{
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    border: white solid .5rem;
+    border-radius: 25%;
+    outline: .25rem solid black;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+}
+
+#intro div{
+    display: flex;
+    flex-direction: column;
+}
+
+#intro div p:first-child{
+    margin-top: .5rem;
+}
+
+#descricao{
+    line-height: 2rem;
+}
