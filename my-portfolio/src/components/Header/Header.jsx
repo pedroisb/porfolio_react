@@ -1,7 +1,7 @@
 import React from "react"
 import '../../assets/rpgui/rpgui.css'
 import './Header.css';
-import joystick from "../../assets/img/joystick.png"
+import joystick from "../../assets/img/logo/joystick.png"
 import MenuBurger from "../MenuBurger/MenuBurger";
 
 

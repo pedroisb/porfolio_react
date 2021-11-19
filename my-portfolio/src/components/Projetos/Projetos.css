@@ -4,6 +4,7 @@
     text-align: center;
     /* position: static !important; */
     height: 87.25vh;
+    width: 100vw;
 }
 
 #projetos h1{
@@ -57,5 +58,66 @@ hr {
 .carousel-control-next, 
 .carousel-control-prev {
     width: 10%;
-    top: 65.25vh;
+    top: 110%;
+}
+
+/* .carousel-item-start,
+.carousel-item-end,
+.carousel-item-prev,
+.carousel-item-next{
+    width: ;
+} */
+
+
+/* MEDIAQUERIES */
+@media screen and (max-height: 320px) {
+    #projetos{
+        height: 85vh;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        top: 0%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #projetos{
+        height: 85vh;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        top: 0%;
+    }
+}
+
+@media screen and (max-height: 576px) {
+    #projetos{
+        height: 75vh;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        top: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #projetos{
+        height: 97.5vh;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        top: 5%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1800px) {
+
 }

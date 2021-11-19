@@ -7,17 +7,18 @@
     border-image-width: 1rem;
     border-width: .8rem;
     padding: 0rem;
-
     /* background */
     background: url("../../assets/rpgui/img/background-image-golden2.png") repeat repeat;
 }
 
 /* modal do menu hamburguer */
 #offcanvasNavbar {
+    height: 100vh;
+    width: 100vh;
+
     display: flex;
     gap: 1rem;
     text-align: center;
-
     border-style: solid;
     border-image-source: url("../../assets/rpgui/img/border-image.png");
     border-image-repeat: repeat;
@@ -50,13 +51,6 @@
     font-size: 2rem;
 }
 
-#offcanvas-btns{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-}
-
 #burger-title{
     font-size: 2rem;
 }
@@ -67,19 +61,22 @@ hr{
     width: 90%;
 }
 
+#offcanvas-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
 #burger-btn {
     width: 25rem;
     height: 7.5rem;
     display: inline-block;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     outline: 0;
-    max-width: 100%;
     image-rendering: pixelated;
-    font-family: 'Press Start 2P',cursive;
-}
-
-#burger-btn{
+    /* max-width: 100%; */
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
@@ -99,4 +96,71 @@ hr{
 #burger-btn:hover, 
 #offcanvasNavbar a:hover {
     cursor: url("../../assets/rpgui/img/cursor/point.png") 10 0,auto;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-height: 320px) {
+    #burger-title{
+        font-size: 1.5rem;
+    }
+    hr{
+        margin-bottom: .75rem;
+    }
+    #burger-btn {
+        font-size: 1rem;
+        width: 15rem;
+        height: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    #offcanvasNavbar {
+        height: 100vh;
+        width: 50vw;
+    }
+    #offcanvas-btns{
+        gap: .5rem;
+    }
+}
+
+@media screen and (min-width: 576px){
+    #burger-btn {
+        width: 16.5rem;
+        height: 6.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #offcanvasNavbar {
+        height: 100vh;
+        width: 50vw;
+    }
+    #offcanvas-btns{
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #offcanvasNavbar {
+        width: 50vw;
+    }
+    hr{
+        margin-bottom: 1rem;
+    }
+    #burger-btn {
+        width: 18rem;
+        height: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    #offcanvas-btns{
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

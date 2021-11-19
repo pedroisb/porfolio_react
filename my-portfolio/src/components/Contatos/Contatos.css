@@ -1,0 +1,19 @@
+#contatos {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: .35rem;
+}
+
+#contatos img{
+    /* align-self: center; */
+
+    height: 4.25rem;
+    width: 4.25rem;
+    object-fit: fill;
+
+    border: white solid .2rem;
+    border-radius:25%;
+    outline: black solid .03rem;
+    background-color: rgb(200, 200, 200);
+}

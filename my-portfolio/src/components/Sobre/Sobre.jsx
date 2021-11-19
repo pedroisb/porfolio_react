@@ -1,6 +1,6 @@
 import React from "react";
 import './Sobre.css'
-import avatar from '../../assets/img/avatar_bigode.png'
+import avatar from '../../assets/img/avatar-pedro/avatar_bigode.png'
 
 export default () => {
     return (
