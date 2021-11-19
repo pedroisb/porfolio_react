@@ -3,7 +3,7 @@ import './Contatos.css'
 import { medias } from "./SocialMedia";
 
 
-export default () => {
+export const Contatos = () => {
     const mediaContato = medias.map(({icon, alt, link}) => (
         <a href={link}>
                     <img src={icon} alt={alt} />

@@ -2,7 +2,7 @@ import React from "react"
 import '../../assets/rpgui/rpgui.css'
 import './MenuBurger.css';
 
-export default () => {
+export const MenuBurger = () => {
     return (
     
         <nav className="navbar navbar-light">
@@ -48,5 +48,5 @@ export default () => {
     )
 }
 
-{/* NÃO FAZ PARTE DO MVP - IMPLEMENTAR FUTURAMENTE:
- <button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button> */}
+//NÃO FAZ PARTE DO MVP - IMPLEMENTAR FUTURAMENTE:
+//<button className="rpgui-button" id="burger-btn"><a href="#">SKILLS</a></button>

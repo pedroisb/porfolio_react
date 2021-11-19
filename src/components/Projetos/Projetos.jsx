@@ -6,11 +6,11 @@ import './Projetos.css'
 import { projetosTodos } from "./Cards";
 
 
-export default () => {
+export const Projetos = () => {
   
   const card = projetosTodos.map(({carouselStatus, avatar, titulo, subtitulo, descricao, webpage, repo}) => (
     <div className={carouselStatus}>
-      <a href={webpage} target="_blank">
+      <a href={webpage} target="_blank" rel="noreferrer">
         <img className="card-avatar" src={avatar} alt="" />
       </a>
       <h5>{titulo}</h5>
@@ -18,7 +18,6 @@ export default () => {
         <p>{subtitulo}</p>
         <p>{descricao}</p>
       </div>
-        {/* <a href={repo} target="_blank">Repo</a> */}
     </div>
   ))
 

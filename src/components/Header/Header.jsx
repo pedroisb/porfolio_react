@@ -2,10 +2,10 @@ import React from "react"
 import '../../assets/rpgui/rpgui.css'
 import './Header.css';
 import joystick from "../../assets/img/logo/joystick.png"
-import MenuBurger from "../MenuBurger/MenuBurger";
+import { MenuBurger } from "../MenuBurger/MenuBurger";
 
 
-export default () => {
+export const Header = () => {
     
     const logo = <img id="logo-img" src={joystick} alt="imagem de um joystick" />
     

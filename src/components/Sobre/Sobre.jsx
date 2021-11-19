@@ -2,7 +2,7 @@ import React from "react";
 import './Sobre.css'
 import avatar from '../../assets/img/avatar-pedro/avatar_bigode.png'
 
-export default () => {
+export const Sobre = () => {
     return (
         <section id="sobre" className="rpgui-container framed-grey">
             <h1>SOBRE</h1>
