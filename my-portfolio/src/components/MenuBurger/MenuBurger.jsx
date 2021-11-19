@@ -24,9 +24,21 @@ export default () => {
                 <hr /> 
                 
                 <div id="offcanvas-btns">
-                    <button className="rpgui-button" id="burger-btn"><a href="#">SOBRE</a></button>
-                    <button className="rpgui-button" id="burger-btn"><a href="#">PROJETOS</a></button>
-                    <button className="rpgui-button" id="burger-btn"><a href="#">CONTATO</a></button>
+
+                    {/* RESOLVER PROBLEMA-01: CLICK - TEM QUE FECHAR O NAVBAR APPÓS REDIRECIONAR */}
+
+                    {/* RESOLVER PROBLEMA-02: CLICK - BUTTON TEM QUE SER CLICÁVEL POR INTEIRO, IDENTIFICÁ-LO COM O LINK 
+                    <<<RESOLVIDO>>> BASTA FAZER ADEQUAÇÕES NECESSÁRIAS NO CSS*/}
+
+                    {/* RESOLVER PROBLEMA-03: SOBREPOSIÇÃO - AO CLICAR, REDIRECIONA PARA SOBRE, MAS ELE CORTA A PARTE DE CIMA. PROVAVELMENTE PELO POSITION FIXED DO HEADER 
+                    SUGESTÃO: GAP ENTRE ELEMENTOS = HEIGHT DO HEADER E READEQUAR MARGIN-TOP CONTEÚDO DE BANNER*/}
+                    
+                    <a href="#sobre"><button type="button" className="rpgui-button" id="burger-btn">SOBRE</button></a>
+
+
+                    <a href="#projetos"><button type="button" className="rpgui-button navlink-active" id="burger-btn">PROJETOS</button></a>
+
+                    <a href="#"><button type="button" className="rpgui-button navlink-active" id="burger-btn">CONTATO</button></a>
                 </div>
             </nav>
         </nav>

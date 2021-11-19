@@ -28,7 +28,7 @@ hr {
     outline: .25rem solid black;
 }
 
-/* carousel-item tem display:none por padrão, apliquei flex no prev, next e active, para contemplar somente aqueles que têm que estar visíveis. Se aplicar flex em todos, todos os cards serão renderizados simultaneamente, uns sobre os outros */
+/* carousel-item tem display:none por padrão, apliquei flex no prev, next e active para contemplar somente aqueles que têm que estar visíveis. Se aplicar flex em todos, todos os cards serão renderizados simultaneamente, uns sobre os outros */
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev{

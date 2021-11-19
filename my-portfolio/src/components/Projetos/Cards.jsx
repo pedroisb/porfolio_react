@@ -1,11 +1,11 @@
-//Projetos representados como objetos, abrigados em respectivas variáveis
-
 //Importando imagens a serem utilizadas como avatar dos projetos realizados
-import logoPet from '../../assets/avatar-projetos/petinder-icon.png';
-import logoMemory from '../../assets/avatar-projetos/memory-icon.png';
-import logoToDo from '../../assets/avatar-projetos/to-do-icon.png'
+import logoPet from '../../assets/img/avatar-projetos/petinder-icon.png';
+import logoMemory from '../../assets/img/avatar-projetos/memory-icon.png';
+import logoToDo from '../../assets/img/avatar-projetos/to-do-icon.png'
 
-export const projetoPetinder = {
+
+//Projetos representados como objetos, abrigados em respectivas variáveis
+const projetoPetinder = {
     carouselStatus: "carousel-item active",
     avatar: logoPet, 
     titulo: "PeTinder", 
@@ -15,17 +15,17 @@ export const projetoPetinder = {
     repo:"https://github.com/projetoFinalFrontEnd/projetoFinal"
 }
 
-export const projetoMemory = {
+const projetoMemory = {
     carouselStatus: "carousel-item",
     avatar: logoMemory, 
     titulo: "Memory Game", 
     subtitulo: "Projeto da disciplina Front-End II, do curso CTD",
-    descricao: "Fora desenvolvido pela equipe um jogo da memória com cards construídos pelo usuário a partir de um formulário",
+    descricao: "Desenvolvido pela equipe um jogo da memória com cards construídos pelo usuário a partir de um formulário",
     webpage:"https://checkpoint-01-fe-ii.github.io/form/",
     repo:"https://github.com/Checkpoint-01-FE-II/form"
 }
 
-export const projetoToDo = {
+const projetoToDo = {
     carouselStatus: "carousel-item",
     avatar: logoToDo, 
     titulo: "To-Do List", 
@@ -34,3 +34,6 @@ export const projetoToDo = {
     webpage:"https://projetofinalfrontend.github.io/projetoFinal",
     repo:"https://github.com/DH-Front-End-02-Checkpoint-02/Projeto-To-Do"
 }
+
+
+export const projetosTodos = [projetoPetinder, projetoMemory, projetoToDo]

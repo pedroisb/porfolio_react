@@ -79,7 +79,7 @@ hr{
     font-family: 'Press Start 2P',cursive;
 }
 
-#burger-btn a{
+#burger-btn{
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
@@ -97,6 +97,6 @@ hr{
 .navbar-toggler:active,
 .btn-close:active,
 #burger-btn:hover, 
-#burger-btn a:hover {
+#offcanvasNavbar a:hover {
     cursor: url("../../assets/rpgui/img/cursor/point.png") 10 0,auto;
 }
